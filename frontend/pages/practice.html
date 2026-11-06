@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice — Campus2Corporate</title>
+  <meta name="description" content="Practise aptitude, programming and core computer science MCQs with instant scoring and explanations.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="detail-page practice-page">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html" aria-label="Campus2Corporate home">
+        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="17" width="6" height="11" fill="#B5523B"/><rect x="11" y="11" width="6" height="17" fill="#B5523B"/><rect x="20" y="5" width="6" height="23" fill="#777A51"/><path d="M3 12 L14 5 L25 1" stroke="#252620" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+        <span>Campus<b>2</b>Corporate</span>
+      </a>
+      <nav class="detail-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#companies">Explore companies</a>
+        <a href="practice.html" aria-current="page">Practice</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <p class="sr" id="announcer" aria-live="polite"></p>
+
+    <!-- 1. Test selection -->
+    <section id="selectView" class="pr-select" aria-labelledby="selectTitle">
+      <p class="eyebrow">Practice</p>
+      <h1 id="selectTitle">Practice with purpose.</h1>
+      <p class="pr-lead">Build confidence one question at a time. Choose a subject and start practising.</p>
+      <p class="pr-error" id="dataError" hidden></p>
+      <div class="pr-tests" id="testList"></div>
+      <p class="pr-note">A frontend-only starter set of original questions. They are not from any company’s real test, and scores are not saved to any account.</p>
+    </section>
+
+    <!-- 2. Taking a test -->
+    <section id="quizView" class="pr-quiz" aria-labelledby="quizTitle" hidden>
+      <div class="pr-top">
+        <p class="eyebrow" id="quizCategory"></p>
+        <button type="button" class="pr-link" id="exitBtn">← All tests</button>
+      </div>
+      <h2 class="sr" id="quizTitle">Practice test</h2>
+      <div class="pr-status">
+        <p id="quizCount"></p>
+        <p id="answeredCount"></p>
+      </div>
+      <progress id="quizProgress" value="1" max="1" aria-label="Question progress"></progress>
+      <ol class="pr-qnav" id="qNav" aria-label="Jump to a question"></ol>
+      <fieldset class="pr-qbox">
+        <legend>
+          <span class="pr-meta" id="qMeta"></span>
+          <span class="pr-qtext" id="qText" tabindex="-1"></span>
+        </legend>
+        <div id="options" class="pr-options"></div>
+      </fieldset>
+      <div class="pr-actions">
+        <button type="button" class="btn btn-ghost" id="prevBtn">← Previous</button>
+        <button type="button" class="btn btn-ghost" id="nextBtn">Next →</button>
+        <button type="button" class="btn btn-primary" id="submitBtn" hidden>Submit test</button>
+      </div>
+    </section>
+
+    <!-- 3. Results and review -->
+    <section id="resultView" class="pr-result" aria-labelledby="resultTitle" hidden>
+      <p class="eyebrow" id="resultCategory"></p>
+      <h2 id="resultTitle" tabindex="-1">Your result</h2>
+      <p class="pr-score"><span id="scoreFraction"></span> <span id="scorePercent"></span></p>
+      <dl class="pr-stats" id="stats"></dl>
+      <div class="pr-actions">
+        <button type="button" class="btn btn-primary" id="reviewBtn" aria-expanded="false" aria-controls="reviewList">Review answers</button>
+        <button type="button" class="btn btn-ghost" id="retakeBtn">Retake test</button>
+        <button type="button" class="btn btn-ghost" id="backBtn">Choose another test</button>
+      </div>
+      <p class="pr-note">This is not saved to an account. A short summary of the attempt is kept only in this browser, where your demo profile page can show it.</p>
+      <div id="reviewList" class="pr-review" hidden></div>
+    </section>
+
+    <div class="detail-bottom">
+      <a class="btn btn-ghost" href="../index.html">Go to homepage</a>
+      <a class="btn btn-ghost" href="../index.html#companies">Explore companies</a>
+    </div>
+  </main>
+
+  <dialog id="confirmDialog" class="pr-dialog" aria-labelledby="dlgTitle" aria-describedby="dlgText">
+    <h2 id="dlgTitle"></h2>
+    <p id="dlgText"></p>
+    <div class="pr-actions">
+      <button type="button" class="btn btn-ghost" id="dlgCancel"></button>
+      <button type="button" class="btn btn-primary" id="dlgOk"></button>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <div class="wrap foot-grid">
+      <div>
+        <p class="brand-text">Campus2Corporate</p>
+        <p class="small">Built for the IET DAVV student community.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#companies">Explore Companies</a>
+        <a href="login.html">Sign in</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/practice-data.js"></script>
+  <script src="../js/practice.js"></script>
+</body>
+</html>

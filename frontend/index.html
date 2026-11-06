@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus2Corporate — Placement preparation for IET DAVV students</title>
+  <meta name="description" content="A student-built placement-preparation platform for IET DAVV students: explore companies, practise, and learn from shared experiences.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Campus2Corporate home">
+        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="17" width="6" height="11" fill="#B5523B"/><rect x="11" y="11" width="6" height="17" fill="#B5523B"/><rect x="20" y="5" width="6" height="23" fill="#777A51"/><path d="M3 12 L14 5 L25 1" stroke="#252620" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+        <span>Campus<b>2</b>Corporate</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span></button>
+      <div class="nav-menu" id="menu">
+        <ul class="nav-links">
+          <li><a href="#companies">Explore Companies</a></li>
+          <li><a href="pages/practice.html">Practice</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+        </ul>
+        <form class="nav-search" id="navSearch" role="search">
+          <label class="sr" for="navSearchInput">Search companies</label>
+          <input id="navSearchInput" type="search" placeholder="Search companies…" autocomplete="off">
+          <kbd aria-hidden="true">Ctrl K</kbd>
+        </form>
+        <a class="signin" href="pages/login.html">Sign in</a>
+        <a class="btn btn-primary" href="pages/register.html">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">From campus to opportunities</p>
+          <h1>Same Campus.<br><em>Bigger Possibilities.</em></h1>
+          <p class="lead">A dedicated platform for IET DAVV students to explore companies, practise aptitude and technical questions, read placement experiences, and prepare smarter — all in one place.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="pages/register.html">Get started</a>
+            <a class="btn btn-ghost" href="#companies">Explore companies</a>
+          </div>
+          <p class="byline"><strong>Built for IET DAVV students</strong><br>By the community, for the next generation.</p>
+        </div>
+
+        <div class="hero-art">
+          <span class="note-top" aria-hidden="true">Same class rooms,<br>different dreams,<br>one platform.</span>
+          <div class="blob" aria-hidden="true"></div>
+          <figure class="photo">
+            <img id="campusPhoto" src="assets/campus.png" width="650" height="307" alt="Yellow multi-storey campus block with red accents and a red-roofed entrance canopy, under a blue sky with trees" fetchpriority="high">
+            <svg id="campusArt" hidden viewBox="0 0 560 420" role="img" aria-label="Illustration of a campus building framed by a tree">
+              <defs><pattern id="win" width="28" height="30" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="20" height="18" fill="#6c6f55" opacity=".55"/></pattern></defs>
+              <rect width="560" height="420" fill="#E6DCC8"/>
+              <polygon points="120,150 520,90 520,360 120,360" fill="#C9AF8C"/>
+              <polygon points="120,150 520,90 520,200 120,230" fill="url(#win)"/>
+              <rect x="150" y="250" width="330" height="110" fill="#9C8466"/>
+              <g fill="#B5523B"><rect x="170" y="230" width="18" height="130"/><rect x="260" y="226" width="18" height="134"/><rect x="350" y="220" width="18" height="140"/><rect x="440" y="214" width="18" height="146"/></g>
+              <rect x="0" y="360" width="560" height="60" fill="#7a6a52"/>
+              <circle cx="80" cy="170" r="70" fill="#8a8a45"/><circle cx="40" cy="240" r="55" fill="#777A51"/><circle cx="110" cy="260" r="50" fill="#6a6d45"/>
+              <rect x="72" y="280" width="12" height="90" fill="#4a3f2f"/>
+            </svg>
+          </figure>
+          <aside class="paper-note" aria-label="Topics on the platform">
+            <ul><li>Placements</li><li>Preparation</li><li>Real experiences</li><li>Our community</li></ul>
+          </aside>
+          <svg class="arrow" viewBox="0 0 40 70" aria-hidden="true"><path d="M20 2 C4 25 6 45 26 62 M26 62 L14 58 M26 62 L28 48" fill="none" stroke="#252620" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" aria-label="What the platform offers">
+      <div class="wrap feature-grid">
+        <div class="feature"><svg viewBox="0 0 24 24" class="ic c-olive" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6M8 11h2M14 11h2"/></svg><div><h2>Company Insights</h2><p>Placement patterns, eligibility information, roles, and more.</p></div></div>
+        <div class="feature"><svg viewBox="0 0 24 24" class="ic c-olive" aria-hidden="true"><path d="M3 5c3-1 6-1 9 1 3-2 6-2 9-1v14c-3-1-6-1-9 1-3-2-6-2-9-1zM12 6v14"/></svg><div><h2>Practice &amp; Prepare</h2><p>Aptitude questions, technical questions, and curated resources.</p></div></div>
+        <div class="feature"><svg viewBox="0 0 24 24" class="ic c-red" aria-hidden="true"><path d="M4 5h16v11H10l-5 4v-4H4z"/></svg><div><h2>Real Experiences</h2><p>Read and eventually share placement journeys from students.</p></div></div>
+        <div class="feature"><svg viewBox="0 0 24 24" class="ic c-gold" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19c0-3.5 2.7-5.5 6-5.5s6 2 6 5.5M15 14c3 0 6 1.4 6 5"/></svg><div><h2>Student Community</h2><p>A future space to connect, discuss, and learn together.</p></div></div>
+      </div>
+    </section>
+
+    <!-- COMPANIES -->
+    <section class="companies" id="companies" aria-labelledby="companiesTitle">
+      <div class="explore-panel">
+        <div>
+          <p class="eyebrow light">Explore</p>
+          <h2 id="companiesTitle">Find your next opportunity.</h2>
+          <p>Browse companies, understand their selection processes, and find the right resources to prepare for your dream role.</p>
+          <a class="btn btn-light" href="#companyList" id="panelCta">Explore companies →</a>
+        </div>
+      </div>
+      <div class="explore-main">
+        <div class="controls">
+          <label class="sr" for="companySearch">Search companies or roles</label>
+          <input id="companySearch" type="search" placeholder="Search companies or roles…" autocomplete="off">
+          <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+        </div>
+        <p class="sample-note">Companies are listed from historical campus placement information. Participation may vary by batch and year, and not every company is necessarily recruiting this season.</p>
+        <p class="status sr" id="resultStatus" aria-live="polite"></p>
+        <div class="card-grid" id="companyList"></div>
+        <div class="empty" id="emptyState" hidden>
+          <h3>No companies match that search.</h3>
+          <p>Try a shorter keyword, or reset the category filter.</p>
+          <button class="btn btn-ghost" type="button" id="resetBtn">Clear search and filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how" aria-labelledby="howTitle">
+      <div class="wrap">
+        <h2 id="howTitle">How preparation works here</h2>
+        <ol class="steps">
+          <li><span class="num">01</span><h3>Choose a company</h3><p>Identify a company or role you want to prepare for.</p></li>
+          <li><span class="num">02</span><h3>Understand the process</h3><p>Review relevant preparation topics and any verified selection information available.</p></li>
+          <li><span class="num">03</span><h3>Practise with purpose</h3><p>Work through focused aptitude, technical, and interview-preparation resources.</p></li>
+        </ol>
+        <p class="sample-note">A starter practice test is available. <a href="pages/practice.html">Try a practice test</a>. Timed mock assessments are planned.</p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section class="experiences" id="experiences" aria-labelledby="expTitle">
+      <div class="wrap exp-grid">
+        <div>
+          <h2 id="expTitle">Placement prep gets better when we share.</h2>
+          <p>Learn from others, exchange interview experiences, and help fellow students prepare with greater clarity.</p>
+          <span class="tag">Preview · Coming soon</span>
+        </div>
+        <div class="thread" aria-label="Preview of the planned experiences feature">
+          <p class="thread-label">Demonstration layout — no real student content</p>
+          <div class="thread-row"><b>Topic</b><span>How was the online assessment structured?</span></div>
+          <div class="thread-row"><b>Topic</b><span>Which technical topics came up in interviews?</span></div>
+          <div class="thread-row"><b>Topic</b><span>What would you prepare earlier, looking back?</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final">
+      <div class="wrap">
+        <h2>Make your next application a little less uncertain.</h2>
+        <p>Start exploring the resources that can make your preparation more focused.</p>
+        <a class="btn btn-light" href="#companies">Explore companies →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-grid">
+      <div>
+        <p class="brand-text">Campus2Corporate</p>
+        <p>A student-built placement-preparation platform.</p>
+        <p class="small">Built for the IET DAVV student community.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#companies">Explore Companies</a>
+        <a href="#how">How it works</a>
+        <a href="#experiences">Experiences</a>
+        <a href="pages/login.html">Sign in</a>
+        <a href="pages/register.html">Register</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

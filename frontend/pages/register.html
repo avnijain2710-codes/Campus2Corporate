@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register — Campus2Corporate</title>
+  <meta name="description" content="Create a local demo profile for Campus2Corporate.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="detail-page account-page" data-page="register">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html" aria-label="Campus2Corporate home">
+        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="17" width="6" height="11" fill="#B5523B"/><rect x="11" y="11" width="6" height="17" fill="#B5523B"/><rect x="20" y="5" width="6" height="23" fill="#777A51"/><path d="M3 12 L14 5 L25 1" stroke="#252620" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+        <span>Campus<b>2</b>Corporate</span>
+      </a>
+      <nav class="detail-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#companies">Explore companies</a>
+        <a href="practice.html">Practice</a>
+        <a href="login.html">Sign in</a>
+        <a href="register.html" aria-current="page">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="ac-section" aria-labelledby="regTitle">
+      <p class="eyebrow">Register</p>
+      <h1 id="regTitle">Create your demo profile.</h1>
+      <p class="ac-lead">Tell us a little about yourself so your practice and profile pages feel personal.</p>
+      <p class="ac-demo"><strong>Local demo.</strong> This is not a real account. Your details are saved only in this browser. No password is requested or stored, and nothing is sent to a server.</p>
+      <p class="ac-notice" id="existingNotice" hidden>A demo profile already exists in this browser. Registering again will replace it.</p>
+      <form id="profileForm" class="ac-form" novalidate>
+        <div class="field">
+          <label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label>
+          <input id="f-name" name="name" type="text" autocomplete="name" maxlength="80" required aria-describedby="e-name">
+          
+          <p class="field-error" id="e-name" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+          <input id="f-email" name="email" type="email" autocomplete="email" maxlength="120" required aria-describedby="e-email h-email">
+          <p class="field-hint" id="h-email">Used only to label this demo profile in your browser.</p>
+          <p class="field-error" id="e-email" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-branch">Branch or degree <span class="req" aria-hidden="true">*</span></label>
+          <select id="f-branch" name="branch" required aria-describedby="e-branch"><option value="">Select your branch</option><option>Computer Science and Engineering</option><option>Information Technology</option><option>Electronics and Communication</option><option>Electrical and Electronics</option><option>Mechanical Engineering</option><option>Civil Engineering</option><option>Other</option></select>
+          
+          <p class="field-error" id="e-branch" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-year">Graduation year <span class="req" aria-hidden="true">*</span></label>
+          <input id="f-year" name="year" type="number" inputmode="numeric" min="2020" max="2035" step="1" required aria-describedby="e-year h-year">
+          <p class="field-hint" id="h-year">For example, 2028.</p>
+          <p class="field-error" id="e-year" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-github">GitHub profile URL <span class="opt">(optional)</span></label>
+          <input id="f-github" name="github" type="url" inputmode="url" autocomplete="off" placeholder="https://github.com/username" aria-describedby="e-github">
+          
+          <p class="field-error" id="e-github" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-leetcode">LeetCode profile URL <span class="opt">(optional)</span></label>
+          <input id="f-leetcode" name="leetcode" type="url" inputmode="url" autocomplete="off" placeholder="https://leetcode.com/u/username" aria-describedby="e-leetcode">
+          
+          <p class="field-error" id="e-leetcode" hidden></p>
+        </div>
+        <p class="ac-status" id="formStatus" role="status"></p>
+        <div class="ac-actions">
+          <button type="submit" class="btn btn-primary" id="submitBtn">Create demo profile</button>
+        </div>
+      </form>
+      <p class="ac-alt">Already created one? <a href="login.html">Open your demo profile</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-grid">
+      <div>
+        <p class="brand-text">Campus2Corporate</p>
+        <p class="small">Built for the IET DAVV student community.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#companies">Explore Companies</a>
+        <a href="practice.html">Practice</a>
+        <a href="login.html">Sign in</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/account.js"></script>
+</body>
+</html>

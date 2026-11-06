@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company — Campus2Corporate</title>
+  <meta name="description" content="Explore general preparation topics and learning resources for companies on Campus2Corporate.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="detail-page">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html" aria-label="Campus2Corporate home">
+        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+          <rect x="2" y="17" width="6" height="11" fill="#B5523B" />
+          <rect x="11" y="11" width="6" height="17" fill="#B5523B" />
+          <rect x="20" y="5" width="6" height="23" fill="#777A51" />
+          <path d="M3 12 L14 5 L25 1" stroke="#252620" stroke-width="1.6" fill="none" stroke-linecap="round" />
+        </svg>
+        <span>Campus<b>2</b>Corporate</span>
+      </a>
+      <nav class="detail-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#companies">Explore companies</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#companies">Explore companies</a></li>
+        <li aria-current="page" id="crumbCurrent">Company</li>
+      </ol>
+    </nav>
+
+    <!-- Shown when the company ID is missing or unknown. -->
+    <section class="detail-missing" id="notFound" hidden>
+      <h1>Company not found</h1>
+      <p>We couldn’t find a company matching this link. It may be mistyped, or the company may not be in the list yet.</p>
+      <a class="btn btn-primary" href="../index.html#companies">Back to companies</a>
+    </section>
+
+    <!-- Company information is populated from C2C_COMPANIES by company-detail.js. -->
+    <div id="detail" hidden>
+      <section class="detail-intro" aria-labelledby="dName">
+        <span class="detail-logo" id="dLogo"></span>
+        <div>
+          <h1 id="dName"></h1>
+          <div class="detail-meta">
+            <span class="tag" id="dCategory"></span>
+            <span id="dRoles"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-section" aria-labelledby="overviewTitle">
+        <h2 id="overviewTitle">Overview</h2>
+        <p id="dBlurb"></p>
+      </section>
+
+      <section class="detail-section" aria-labelledby="topicsTitle">
+        <h2 id="topicsTitle">Preparation topics</h2>
+        <div>
+          <ul class="detail-topics" id="dTopics"></ul>
+          <p class="note">Use these general topics as a starting point for your preparation. They are not verified interview questions or a confirmed selection pattern for IET DAVV.</p>
+        </div>
+      </section>
+
+      <section class="detail-section" aria-labelledby="guideTitle">
+        <h2 id="guideTitle">How to use these topics</h2>
+        <ol class="detail-steps">
+          <li><span class="num">1</span><span><strong>Review the fundamentals</strong>Revisit the core concepts behind each topic.</span></li>
+          <li><span class="num">2</span><span><strong>Practise relevant questions</strong>Work through questions on each topic at your own pace.</span></li>
+          <li><span class="num">3</span><span><strong>Record weak areas for revision</strong>Keep your own notes on what to revisit.</span></li>
+        </ol>
+      </section>
+
+      
+<!-- Recommended learning resources -->
+<section class="detail-section resources-section" aria-labelledby="resTitle">
+  <h2 id="resTitle">Recommended learning resources</h2>
+
+  <div class="resource-content">
+    <p class="res-intro">
+      Explore learning material selected to support the preparation topics listed for this company.
+    </p>
+
+    <ul class="res-list" id="dResources" aria-label="Recommended learning resources"></ul>
+
+    <p class="note" id="dResMissing" hidden></p>
+
+    <p class="note">
+      These are general learning resources, not official company interview
+      materials or confirmed selection requirements. External resources are
+      provided by their respective publishers.
+    </p>
+  </div>
+</section>
+
+    </div>
+
+    <div class="detail-bottom">
+      <a class="btn btn-primary" href="../index.html#companies">Back to all companies</a>
+      <a class="btn btn-ghost" href="../index.html">Go to homepage</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-grid">
+      <div>
+        <p class="brand-text">Campus2Corporate</p>
+        <p class="small">Built for the IET DAVV student community.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#companies">Explore Companies</a>
+        <a href="login.html">Sign in</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/company-detail.js"></script>
+</body>
+</html>
